@@ -37,6 +37,7 @@ for (let i = 0; i < numbers.length; i++) {
     }
     
 }
+
 // !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 7
 
 const colors = ['blue', 'red', 'yellow', 'green', 'black']
@@ -44,3 +45,24 @@ const colors = ['blue', 'red', 'yellow', 'green', 'black']
 for (let i =colors.length -1; i >= 0 ;i--) {
     console.log(colors[i]);
 }
+
+// !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 9
+
+const a = []
+for (let i = 0; i < 10; i++) {
+    let randomNumber = Math.floor(Math.random() * (10 - 1))  + 1
+    a.push(randomNumber)
+}
+
+const b = []
+for (let i = 0; i < 10; i++) {
+    let randomNumber = Math.floor(Math.random() * (10 - 1))  + 1
+    b.push(randomNumber)
+}
+const c = []
+for (let i = 0; i < a.length; i++) {
+    let sum = a[i] + b[i];
+    c.push(sum)
+    
+}
+

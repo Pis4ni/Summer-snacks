@@ -124,6 +124,8 @@ console.log(mid);
 
 
 // !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 13
+
+
 function same(a,b){
     if (a===b) {
         return true
@@ -133,4 +135,27 @@ function same(a,b){
 }
 function sameTwo(a,b){
     return a === b
+}
+
+// !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 14
+
+// ​Scrivi due funzioni una che prenda in input tre numeri e restituisca il maggiore, l'altra che restituisca il minore.​
+function max (a,b,c){
+    if (a>b && a>c) {
+        return a
+    }else if (b>a && b>c) {
+        return b 
+    }else{
+        return c
+    }
+}
+
+function min (a,b,c){
+    if (a<b && a<c) {
+        return a
+    }else if (b<a && b<c) {
+        return b 
+    }else{
+        return c
+    }
 }

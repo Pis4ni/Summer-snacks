@@ -159,3 +159,23 @@ function min (a,b,c){
         return c
     }
 }
+
+// !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 15
+
+function vote(x){
+    if (x<18) {
+        return console.log('Insufficiente');
+    }else if (x>=18 && x<21) {
+        return console.log('Sufficiente');
+    }else if (x>=21 && x<24) {
+        return console.log('Buono');
+    }else if (x>=24 && x<27) {
+        return console.log('Distinto');
+    }else if (x>=27 && x<29) {
+        return console.log('Ottimo');
+    }else if (x === 30) {
+        return console.log('Eccellente');
+    }else{
+        return console.log('Voto non valido');
+    }
+}

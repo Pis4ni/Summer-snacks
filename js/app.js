@@ -96,3 +96,19 @@ for (let i = 1; i < 100; i++) {
     };
     
 }
+
+// !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 12
+
+const studentList = ['paolo','carlo','stefano','bianca','luigi']
+const studentVote = []
+let maxScore = 0
+
+for (let i = 0; i < studentList.length; i++) {
+    let vote = parseInt(prompt('inserisci il voto'));
+    studentVote.push(vote)
+    maxScore += vote
+    console.log(maxScore);
+}
+
+let mid = maxScore / studentVote.length
+console.log(mid);

@@ -99,16 +99,38 @@ for (let i = 1; i < 100; i++) {
 
 // !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 12
 
-const studentList = ['paolo','carlo','stefano','bianca','luigi']
-const studentVote = []
-let maxScore = 0
 
+//considero una lista di studenti data
+const studentList = ['paolo','carlo','stefano','bianca','luigi']
+// creo un array vuoto atto a tenere conto dei voti
+const studentVote = []
+// creo una variabile che conterrá il voto massimo
+let maxScore = 0
+// per ogni studente della lista
 for (let i = 0; i < studentList.length; i++) {
+    // chiedo un voto
     let vote = parseInt(prompt('inserisci il voto'));
+    // metto il voto nella lista voti
     studentVote.push(vote)
+    // sommo il voto alla variabile del voto massimo
     maxScore += vote
+    // stampo il voto massimo totalizzato da tutti gli studenti
     console.log(maxScore);
 }
-
+// creo la variabile mid che contiene la media dei voti ottenuti
 let mid = maxScore / studentVote.length
+// stampo la media
 console.log(mid);
+
+
+// !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 13
+function same(a,b){
+    if (a===b) {
+        return true
+    }else{
+        return false
+    }
+}
+function sameTwo(a,b){
+    return a === b
+}

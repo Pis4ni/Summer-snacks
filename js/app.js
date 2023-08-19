@@ -47,22 +47,52 @@ for (let i =colors.length -1; i >= 0 ;i--) {
 }
 
 // !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 9
-
+// creo un array a vuoto
 const a = []
+// aggiungo 10 elementi casuali all array
 for (let i = 0; i < 10; i++) {
     let randomNumber = Math.floor(Math.random() * (10 - 1))  + 1
     a.push(randomNumber)
 }
+// stampo l'array completo
+console.log(a);
 
+// creo un array b vuoto
 const b = []
+// aggiungo 10 elementi casuali all array
 for (let i = 0; i < 10; i++) {
     let randomNumber = Math.floor(Math.random() * (10 - 1))  + 1
     b.push(randomNumber)
 }
+// stampo l'array completo
+console.log(b);
+// creo un array c vuoto
 const c = []
 for (let i = 0; i < a.length; i++) {
     let sum = a[i] + b[i];
     c.push(sum)
     
 }
+console.log(c);
 
+
+// !/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ snack 10
+// allaccio l elemento container10 dal dom
+const container = document.getElementById("container10");
+// genero i numeri da 1 a 100
+for (let i = 1; i < 100; i++) {
+    //per ogni numero creo un elemento span
+    const numberElement = document.createElement('span')
+    //trasformo la i in stringa, aggiungo uno spazio alla fine e meto tutto dentro lo span
+    numberElement.textContent = i.toString() + " "
+    // metto lo span appena creato nel dom
+    container.appendChild(numberElement);
+    // se la i é divisibile * 10
+    if (i % 10 == 0) {
+        // creo un elemento br per andare a capo
+        const lineBreak = document.createElement("br");
+        // aggiungo il line break dopo ogni decina in modo da andare a capo
+        container.appendChild(lineBreak);
+    };
+    
+}
